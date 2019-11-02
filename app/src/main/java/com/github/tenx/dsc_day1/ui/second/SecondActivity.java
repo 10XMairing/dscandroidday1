@@ -1,16 +1,11 @@
-package com.github.tenx.dsc_day1.ui.main;
+package com.github.tenx.dsc_day1.ui.second;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -27,7 +22,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity{
+public class SecondActivity extends AppCompatActivity{
 
 
 
@@ -49,7 +44,7 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_second);
         initViews();
         adapter = new UserAdapter(this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -95,10 +90,7 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
-
         requestQueue.add(stringRequest);
-
-
 
 
     }

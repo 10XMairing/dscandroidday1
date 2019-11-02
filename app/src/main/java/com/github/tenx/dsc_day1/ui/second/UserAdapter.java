@@ -1,4 +1,4 @@
-package com.github.tenx.dsc_day1.ui.main;
+package com.github.tenx.dsc_day1.ui.second;
 
 import android.content.Context;
 import android.view.LayoutInflater;
